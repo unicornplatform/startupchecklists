@@ -1,0 +1,19 @@
+{
+  "name": "startupchecklists",
+  "version": "1.0.0",
+  "description": "Startup Landing Page Checklists",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unicornplatform/startupchecklists.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/unicornplatform/startupchecklists/issues"
+  },
+  "homepage": "https://github.com/unicornplatform/startupchecklists#readme"
+}
