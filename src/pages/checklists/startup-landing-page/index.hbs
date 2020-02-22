@@ -1,0 +1,39 @@
+---
+title: Startup Landing Page Checklist
+meta:
+description: Some meta description
+stylesheets:
+  - ../../../css/index.css
+authors:
+  author1:
+    name: Lily
+    link: ya.ru
+checklists:
+  SEO:
+    -
+      title: Create robots.txt
+      content:
+        Robots.txt is a file which tells Google, Bing and other search engines which pages of your websites are welcome to be indexed. Download a robots.txt which allows every page to be indexed.
+      more:
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptat
+      author: author1
+---
+{{#extend "layout-default"}}
+  {{#content "main"}}
+    <h1>Startup Landing Page Checklist</h1>
+
+    <div class="description">
+      <p>
+        A comprehensive checklist of design, SEO and tech advices on building a converting and optimized landing page for your SaaS, mobile application or any other startup. Brought to you by the industry leaders.
+
+        Check them all to assist your startup!
+      </p>
+    </div>
+
+    <h2>SEO</h2>
+    {{#each checklists.SEO}}
+      <h3>{{this.title}}</h3>
+      <p>{{{this.content}}}</p>
+    {{/each}}
+  {{/content}}
+{{/extend}}
