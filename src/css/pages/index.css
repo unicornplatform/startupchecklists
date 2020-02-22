@@ -1,0 +1,15 @@
+main {
+  text-align: center;
+  padding-bottom: 400px;
+}
+
+.description {
+  max-width: 400px;
+  margin: 0 auto 80px;
+}
+
+.checklists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 60px;
+}

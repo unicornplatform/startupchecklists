@@ -1,3 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
 body {
-  background: aliceblue;
+  margin: 0;
+  background: #f3f3f3;
+  color: #505050;
+  font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
+  font-size: 16px;
+}
+
+main {
+  max-width: 930px;
+  margin: 0 auto;
+  padding-top: 138px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #303030;
+  margin: 0;
+  padding: 0 0 0.5em;
+}
+
+h1 {
+  font-size: 70px;
+  letter-spacing: 4.67px;
+}
+
+p {
+  margin: 0;
+  padding: 0 0 0.7em;
+  line-height: 1.6;
 }

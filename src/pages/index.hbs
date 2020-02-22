@@ -1,0 +1,35 @@
+---
+meta:
+  description: Some meta description
+stylesheets:
+  - ../css/index.css
+  - ../css/pages/index.css
+title: Startup Checklists
+checklists:
+  -
+    name: startup-landing-page
+    title: Startup Landing Page
+    description: A comprehensive checklist of design, SEO and tech advices on building a converting and optimized landing page.
+  -
+    name: product-hunt-launch
+    title: Product Hunt Launch Checklist
+    description: A comprehensive checklist of design, SEO and tech advices on building a converting and optimized landing page. This card contains more text that the previous one.
+---
+{{#extend "layout-no-footer"}}
+  {{#content "main"}}
+    <h1>Startup Checklists</h1>
+
+    <div class="description">
+      <p>
+        We want your startup to shine. That is why we prepraed this comprehensive crowdsourced checklists.
+      </p>
+      <p>
+        Dilligently check each item to make your startup more solid and confident.
+      </p>
+    </div>
+
+    <div class="checklists">
+      {{> checklists}}
+    </div>
+  {{/content}}
+{{/extend}}
