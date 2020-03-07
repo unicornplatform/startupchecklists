@@ -7,11 +7,11 @@ stylesheets:
   - ../css/pages/index.css
 checklists:
   -
-    name: startup-landing-page
+    id: startup-landing-page
     title: Startup Landing Page Checklist
     description: A comprehensive checklist of design, SEO and tech advices on building a converting and optimized landing page.
   -
-    name: product-hunt-launch
+    id: product-hunt-launch
     title: Product Hunt Launch Checklist
     description: A comprehensive checklist of design, SEO and tech advices on building a converting and optimized landing page. This card contains more text that the previous one.
 ---
@@ -29,7 +29,16 @@ checklists:
     </div>
 
     <div class="checklists">
-      {{> checklists}}
+      {{#each checklists}}
+        <section class="checklist checklist_name_{{this.id}}">
+          <header class="checklist__header">
+            <img src="../icons/{{this.id}}.svg" height="35px">
+            <h2 class="checklist__heading">{{this.title}}</h2>
+          </header>
+          <p>{{this.description}}</p>
+          <a href="/checklists/{{this.id}}/index.hbs" class="checklist__link">See checklist</a>
+        </section>
+      {{/each}}
     </div>
   {{/content}}
 {{/extend}}

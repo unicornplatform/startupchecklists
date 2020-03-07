@@ -13,3 +13,51 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-gap: 60px;
 }
+
+.checklist {
+  background: #fff;
+  box-shadow: 0 2px 110px 0 rgba(0, 0, 0, 0.17);
+  border-radius: 10px;
+  padding: 30px 40px;
+  text-align: left;
+}
+
+.checklist__header {
+  display: flex;
+  width: 60%;
+}
+
+.checklist__heading {
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.checklist__link {
+  border-radius: 4px;
+  background: #303030;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px 10px 30px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  width: max-content;
+}
+
+.checklist__link:after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 15px;
+  margin-left: 10px;
+  background: #fff;
+  mask: url("../../icons/arrow-right.svg") no-repeat 50% 50%;
+}
+
+.checklist_name_startup-landing-page .checklist__link:after {
+  background: #51ec96;
+}
+
+.checklist_name_product-hunt-launch .checklist__link:after {
+  background: #e88568;
+}
