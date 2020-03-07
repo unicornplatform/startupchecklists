@@ -5,35 +5,65 @@ description: Some meta description
 stylesheets:
   - ../../../css/index.css
 authors:
-  author1:
-    name: Lily
-    link: ya.ru
+  aisora:
+    name: Alexander Isora
+    position: Founder
+    company: Unicorn Platform
+    link: https://ya.ru
+    photo: https://via.placeholder.com/100
 checklists:
   SEO:
     -
       title: Create robots.txt
       content:
-        Robots.txt is a file which tells Google, Bing and other search engines which pages of your websites are welcome to be indexed. Download a robots.txt which allows every page to be indexed.
+        Robots.txt is a <a href="http://ya.ru">file</a> which tells Google, Bing and other search engines which pages
+        of your websites are welcome to be indexed. Download a robots.txt which allows every page to be indexed.
       more:
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptat
-      author: author1
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptat
+      author: aisora
+    -
+      title: Create robots.txt
+      content:
+        Robots.txt is a file which tells Google, Bing and other search engines which pages of your websites are welcome
+        to be indexed. Download a robots.txt which allows every page to be indexed.
+      author: aisora
+  Copy:
+    -
+      title: Create robots.txt
+      content:
+        Robots.txt is a file which tells Google, Bing and other search engines which pages of your websites are welcome
+        to be indexed. Download a robots.txt which allows every page to be indexed.
+      more:
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptat
+      author: aisora
+    -
+      title: Create robots.txt
+      content:
+        Robots.txt is a file which tells Google, Bing and other search engines which pages of your websites are welcome
+        to be indexed. Download a robots.txt which allows every page to be indexed.
+      author: aisora
 ---
 {{#extend "layout-default"}}
   {{#content "main"}}
     <h1>Startup Landing Page Checklist</h1>
 
-    <div class="description">
-      <p>
-        A comprehensive checklist of design, SEO and tech advices on building a converting and optimized landing page for your SaaS, mobile application or any other startup. Brought to you by the industry leaders.
-
-        Check them all to assist your startup!
-      </p>
-    </div>
+    <p>
+      A comprehensive checklist of design, SEO and tech advices on building a converting and optimized landing page
+      for your SaaS, mobile application or any other startup. Brought to you by the industry leaders.
+    </p>
+    <p>
+      Check them all to assist your startup!
+    </p>
 
     <h2>SEO</h2>
-    {{#each checklists.SEO}}
-      <h3>{{this.title}}</h3>
-      <p>{{{this.content}}}</p>
-    {{/each}}
+    {{> checklist items=checklists.SEO}}
+
+    <h2>Copy</h2>
+    {{> checklist items=checklists.Copy}}
+
   {{/content}}
 {{/extend}}

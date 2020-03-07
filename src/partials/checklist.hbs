@@ -1,0 +1,28 @@
+{{#each items}}
+  <article>
+    <header>
+      <h3>
+        <input type="checkbox" id="item-{{@index}}">
+        <label for="item-{{@index}}">{{this.title}}</label>
+      </h3>
+    </header>
+    <p>
+      {{{this.content}}}
+      {{#if this.more}}
+        <button type="button" data-target-id="more-{{@index}}">Read more</button>
+      {{/if}}
+    </p>
+    {{#if this.more}}
+      <p data-id="more-{{@index}}">{{this.more}}</p>
+    {{/if}}
+    <footer>
+      <address>
+        {{#with (lookup ../authors this.author)}}
+          <p>{{name}}</p>
+          <p>{{position}} @ <a href="{{link}}">{{company}}</a></p>
+          <img src="{{photo}}" alt="">
+        {{/with}}
+      </address>
+    </footer>
+  </article>
+{{/each}}
