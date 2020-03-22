@@ -1,27 +1,46 @@
 <meta charset="utf-8">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>
-  {{#is title "Home"}}
-    {{site.title}} &middot; {{site.tagline}}
-  {{else}}
-    {{title}} &middot; {{site.title}}
-  {{/is}}
-</title>
+<title>{{title}}</title>
+
 {{#if meta}}
-{{#if meta.author}}
-<meta name="author" content="{{meta.author}}">
+  {{#if meta.description}}
+    <meta name="description" content="{{meta.description}}">
+  {{/if}}
+  {{#if meta.robots}}
+    <meta name="robots" content="{{meta.robots}}">
+  {{/if}}
 {{/if}}
-{{#if meta.description}}
-<meta name="description" content="{{meta.description}}">
+
+{{!-- https://developers.facebook.com/docs/sharing/webmasters --}}
+{{#if og}}
+  {{#if og.title}}
+    <meta property="og:title" content="{{og.title}}">
+  {{/if}}
+  {{#if og.url}}
+    <meta property="og:url" content="{{og.url}}">
+  {{/if}}
+  {{#if og.image}}
+    <meta property="og:image" content="{{og.image}}">
+  {{/if}}
+  {{#if og.type}}
+    <meta property="og:type" content="{{og.type}}">
+  {{/if}}
+  {{#if og.description}}
+    <meta property="og:description" content="{{og.description}}">
+  {{/if}}
+  {{#if og.locale}}
+    <meta property="og:locale" content="{{og.locale}}">
+  {{/if}}
 {{/if}}
-{{#if meta.keywords}}
-<meta name="keywords" content="{{meta.keywords}}">
-{{/if}}
-{{#if meta.robots}}
-<meta name="robots" content="{{meta.robots}}">
-{{/if}}
+
+{{!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/markup --}}
+{{#if twitter}}
+  {{#if twitter.site}}
+    <meta name="twitter:site" content="{{twitter.site}}">
+  {{/if}}
+  {{#if twitter.creator}}
+    <meta name="twitter:creator" content="{{twitter.creator}}">
+  {{/if}}
 {{/if}}
