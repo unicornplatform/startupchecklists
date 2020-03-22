@@ -1,26 +1,26 @@
 {{#each items}}
-  <article>
+  <article class="checklist-item">
     <header>
-      <h3>
-        <input type="checkbox" id="item-{{@index}}">
+      <h3 class="checklist-item__heading">
+        <input type="checkbox" id="item-{{@index}}" class="checklist-item__checkbox">
         <label for="item-{{@index}}">{{this.title}}</label>
       </h3>
     </header>
-    <p>
+    <p class="checklist-item__content">
       {{{this.content}}}
       {{#if this.more}}
         <button type="button" data-target-id="more-{{@index}}">Read more</button>
       {{/if}}
     </p>
     {{#if this.more}}
-      <p data-id="more-{{@index}}">{{this.more}}</p>
+      <p data-id="more-{{@index}}" class="checklist-item__content">{{this.more}}</p>
     {{/if}}
-    <footer>
-      <address>
+    <footer class="checklist-item__footer">
+      <address class="author">
         {{#with (lookup ../authors this.author)}}
-          <p>{{name}}</p>
-          <p>{{position}} @ <a href="{{link}}">{{company}}</a></p>
-          <img src="{{photo}}" alt="">
+          <p class="author__name">{{name}}</p>
+          <p class="author__description">{{position}} @ <a href="{{link}}">{{company}}</a></p>
+          <img src="{{photo}}" alt="" class="author__image">
         {{/with}}
       </address>
     </footer>
