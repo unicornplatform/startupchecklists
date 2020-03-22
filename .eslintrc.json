@@ -1,6 +1,11 @@
 {
   "root": true,
-  "extends": ["eslint:recommended", "airbnb-base", "plugin:import/errors", "plugin:prettier/recommended"],
+  "extends": [
+    "eslint:recommended",
+    "airbnb-base",
+    "plugin:import/errors",
+    "plugin:prettier/recommended"
+  ],
   "plugins": ["prettier"],
   "rules": {
     "prettier/prettier": "error",

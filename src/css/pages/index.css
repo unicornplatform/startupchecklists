@@ -1,6 +1,6 @@
 main {
-  text-align: center;
   padding-bottom: 400px;
+  text-align: center;
 }
 
 .description {
@@ -10,15 +10,15 @@ main {
 
 .checklists {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-gap: 60px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .checklist {
-  background: #fff;
-  box-shadow: 0 2px 110px 0 rgba(0, 0, 0, 0.17);
-  border-radius: 10px;
   padding: 30px 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 110px 0 rgba(0, 0, 0, 0.17);
   text-align: left;
 }
 
@@ -28,30 +28,30 @@ main {
 }
 
 .checklist__heading {
-  font-size: 20px;
   margin-left: 15px;
+  font-size: 20px;
 }
 
 .checklist__link {
-  border-radius: 4px;
-  background: #303030;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px 10px 30px;
-  line-height: 1;
   display: flex;
-  align-items: center;
   width: max-content;
+  align-items: center;
+  padding: 10px 20px 10px 30px;
+  background: #303030;
+  border-radius: 4px;
+  color: #fff;
+  line-height: 1;
+  text-decoration: none;
 }
 
 .checklist__link:after {
-  content: '';
   display: block;
   width: 10px;
   height: 15px;
   margin-left: 10px;
   background: #fff;
-  mask: url("../../icons/arrow-right.svg") no-repeat 50% 50%;
+  content: '';
+  mask: url('../../icons/arrow-right.svg') no-repeat 50% 50%;
 }
 
 .checklist_name_startup-landing-page .checklist__link:after {

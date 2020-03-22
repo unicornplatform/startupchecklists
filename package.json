@@ -5,13 +5,18 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf ./dist",
-    "format": "prettier --write src/**/*.{js,json,css,md}",
+    "format": "prettier --write ./**/*.{js,json,css,md}",
     "build": "npm run clean && parcel build src/pages/index.hbs --no-source-maps --no-cache",
-    "start": "parcel src/pages/index.hbs --open --no-cache",
+    "start": "parcel src/pages/index.hbs --no-cache",
     "watch": "parcel watch src/pages/index.hbs",
     "lint:es": "eslint --ignore-path .gitignore \"src/**/*.js\"",
     "lint:style": "stylelint \"src/**/*.css\"",
     "lint": "npm run lint:es && npm run lint:style"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run format"
+    }
   },
   "repository": {
     "type": "git",
@@ -34,6 +39,7 @@
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^4.2.3",
     "node-sass": "^4.12.0",
     "parcel-bundler": "^1.12.3",
     "parcel-plugin-handlebars": "^0.4.4",
