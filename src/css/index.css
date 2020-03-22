@@ -10,7 +10,7 @@ body {
 
 main {
   max-width: 930px;
-  padding-top: 138px;
+  padding: 138px 0 200px;
   margin: 0 auto;
 }
 
@@ -35,3 +35,64 @@ p {
   margin: 0;
   line-height: 1.6;
 }
+
+a {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #51ec96;
+  color: currentColor;
+  text-decoration: none;
+}
+
+a:hover {
+  border: none;
+}
+
+.footer {
+  padding: 30px 0 60px;
+  border-top: 2px solid #303030;
+  background: #fff;
+}
+
+.nav {
+  max-width: 930px;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media (min-width: 700px) {
+  .menu {
+    flex-direction: row;
+  }
+}
+
+.menu__section {
+  padding: 20px 0;
+}
+
+.menu__heading {
+  display: block;
+  padding-bottom: 16px;
+  color: #424242;
+}
+
+.menu__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menu__item {
+  padding-bottom: 16px;
+}
+
+
