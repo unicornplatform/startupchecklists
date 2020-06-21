@@ -1,21 +1,21 @@
-main {
+.page-main {
   padding-bottom: 400px;
   text-align: center;
 }
 
 .description {
   max-width: 400px;
-  margin: 0 auto 80px;
+  margin: 0 auto 50px;
 }
 
 .checklists {
   display: grid;
-  grid-gap: 60px;
-  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  grid-template-columns: 100%;
 }
 
 .checklist {
-  padding: 30px 40px;
+  padding: 25px;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 110px 0 rgba(0, 0, 0, 0.17);
@@ -23,13 +23,18 @@ main {
 }
 
 .checklist__header {
-  display: flex;
-  width: 60%;
+  padding-bottom: 10px;
+}
+
+.checklist__icon {
+  height: 30px;
+  margin-bottom: 10px;
 }
 
 .checklist__heading {
-  margin-left: 15px;
+  padding-bottom: 0;
   font-size: 20px;
+  line-height: 1.4;
 }
 
 .checklist__link {
@@ -37,6 +42,8 @@ main {
   width: max-content;
   align-items: center;
   padding: 10px 20px 10px 30px;
+  border: none;
+  margin-top: 10px;
   background: #303030;
   border-radius: 4px;
   color: #fff;
@@ -60,4 +67,33 @@ main {
 
 .checklist_name_product-hunt-launch .checklist__link:after {
   background: #e88568;
+}
+
+.checklist_name_zero-budget-marketing .checklist__link:after {
+  background: #b774e6;
+}
+
+.checklist_name_saas-building .checklist__link:after {
+  background: #91aae1;
+}
+
+@media screen and (min-width: 700px) {
+  .checklist__header {
+    display: flex;
+  }
+
+  .checklist__heading {
+    padding-left: 15px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .checklists {
+    grid-gap: 60px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .checklist {
+    padding: 30px 40px;
+  }
 }
