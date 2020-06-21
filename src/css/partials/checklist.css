@@ -52,8 +52,8 @@
   display: grid;
   grid-auto-columns: 100px 1fr;
   grid-template-areas:
-    "image name"
-    "image description";
+    'image name'
+    'image description';
 }
 
 .author__name {
