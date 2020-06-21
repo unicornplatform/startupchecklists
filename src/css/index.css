@@ -41,19 +41,19 @@ a:hover {
   border: none;
 }
 
-.main {
+.page-main {
   max-width: 930px;
   padding: 60px 16px;
   margin: 0 auto;
 }
 
 @media (min-width: 1000px) {
-  .main {
+  .page-main {
     padding: 138px 0 200px;
   }
 }
 
-.footer {
+.page-footer {
   padding: 30px 0 60px;
   border-top: 2px solid #303030;
   background: #fff;
