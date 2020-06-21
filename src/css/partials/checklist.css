@@ -1,3 +1,21 @@
+.checklists {
+  padding: 50px 0;
+}
+
+.checklist {
+
+}
+
+.checklist__heading {
+  padding: 0 0 30px;
+  color: #b0b0b0;
+  font-weight: 100;
+}
+
+.checklist__items {
+
+}
+
 .checklist-item {
   position: relative;
   box-sizing: border-box;
@@ -23,22 +41,42 @@
 .checklist-item__heading {
   display: flex;
   align-items: center;
-  font-size: 35px;
+  font-weight: normal;
 }
 
 .checklist-item__checkbox {
+  position: relative;
   width: 30px;
   height: 30px;
   box-sizing: border-box;
   padding: 0;
   border: 2px solid #51ec96;
-  margin: 0 30px 0 0;
+  margin: 0 15px 0 0;
   appearance: none;
   border-radius: 4px;
 }
 
+.checklist-item__checkbox:checked:after {
+  position: absolute;
+  bottom: 1px;
+  left: 2px;
+  display: block;
+  width: 30px;
+  height: 50px;
+  background-image: url('../../icons/tick-green.svg');
+  content: '';
+}
+
 .checklist-item__content {
-  margin-left: 60px;
+}
+
+.checklist-item__read-more {
+  padding: 0;
+  border: none;
+  appearance: none;
+  background: none;
+  color: #51ec96;
+  font-size: inherit;
 }
 
 .checklist-item__footer {
