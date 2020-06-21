@@ -61,11 +61,17 @@ checklists:
       Check them all to assist your startup!
     </p>
 
-    <h2>SEO</h2>
-    {{> checklist items=checklists.SEO}}
+    <div class="checklists">
+      <section class="checklist">
+        <h2 class="checklist__heading">SEO</h2>
+        <div class="checklist__items">{{> checklist items=checklists.SEO}}</div>
+      </section>
 
-    <h2>Copy</h2>
-    {{> checklist items=checklists.Copy}}
+      <section class="checklist">
+        <h2 class="checklist__heading">Copy</h2>
+        <div class="checklist__items">{{> checklist items=checklists.Copy}}</div>
+      </section>
+    </div>
 
   {{/content}}
 {{/extend}}
