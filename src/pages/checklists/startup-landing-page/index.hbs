@@ -15,24 +15,85 @@ authors:
 checklists:
   SEO:
     -
-      title: Create robots.txt
+      title: Unique title and description
       content:
-        Robots.txt is a <a href="http://ya.ru">file</a> which tells Google, Bing and other search engines which pages
-        of your websites are welcome to be indexed. Download a robots.txt which allows every page to be indexed.
+        Each page must contain a unique title tag and a unique meta description tag. Those can contain an emoji too. Emoji may increase CTR of your website in a search results page.
       more:
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptat
+        Sometimes people copy existing pages and forget to change title and description. It is not obvious and not easily trackable mistake but it can damage your SEO.
       author: aisora
     -
-      title: Create robots.txt
+      title: Human friendly URLs
       content:
-        Robots.txt is a file which tells Google, Bing and other search engines which pages of your websites are welcome
+        Set descriptive URLs. A visitor should understand what they will get by visiting the page. Do not use too much words.
+      author: aisora
+    -
+      title: Robots.txt
+      content:
+        Make sure robots.txt is created, added to the root of the site. It is not hiding public directories and pages.
+      author: aisora
+    -
+      title: Sitemap.xml
+      content:
+        Create sitemap.xml and constantly update it. Submit sitemap.xml to the <a href="https://www.google.com/webmasters" target="_blank"> Google Webmaster console</a>.
+      author: aisora
+    -
+      title: 0 broken links
+      content:
+        Make sure your landing page doesn't contain broken links.
+      more:
+        There is a free <a href="https://ahrefs.com/broken-link-checker" target="_blank">tool</a> for that.
+      author: aisora
+    -
+      title: Check via sitechecker.pro 
+      content:
+        Check your website with <a href="https://sitechecker.pro" target="_blank">tool</a>. It will show you errors and warnings you may missed.
+      author: aisora
+    -
+      title: Only one H1 per page
+      content:
+        Make sure each page contains exactly one <h1> tag.
+      author: aisora
+    -
+      title: Check Search Console for errors
+      content:
+        Look for any warnings shown in your <a href="https://www.google.com/webmasters" target="_blank">Google Webmaster console</a> and fix it.
+      author: aisora
+    -
+      title: Either www, or apex. Not both.
+      content:
+        Use a 301 redirect to redirect your website pages from www.domain.com to domain.com. Or vice versa. There should not be duplicate pages.
+      author: aisora
+    -
+      title: Symatic tags
+      content:
+        HTML5 has plenty of tags. Use main, section, nav, aside, footer, header, article, not just div.
+      author: aisora
+    -
+      title: Open graph
+      content:
+        Open graph are HTML tags which are placed to a <head> section of your website. Those tags tell social networks (such as Twitter, Facebook) more details about your website.
+      more:
+        Pay special attention to og:image. <ul>
+        <li>It must be a <b>direct</b> URL to an image.</li>
+        <li>You can set different images for each website page.</li>
+        <li>Facebook recommends the resolution of 1200x630. This size will work ~fine for other social networks but you can specify an exclusive image for Twitter.</li>
+        </ul>
+         Learn more on <a href="https://ogp.me/" target="_blank">the official website/a> or on this blog post <a href="https://ahrefs.com/blog/open-graph-meta-tags/" target="_blank">this blog post/a>.
+      author: aisora
+  Accessibility:
+    -
+      title: 
+      content:
+        Robots.txts is a file which tells Google, Bing and other search engines which pages of your websites are welcome
         to be indexed. Download a robots.txt which allows every page to be indexed.
+      more:
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptat
       author: aisora
   Copy:
     -
-      title: Create robots.txt
+      title: 
       content:
         Robots.txts is a file which tells Google, Bing and other search engines which pages of your websites are welcome
         to be indexed. Download a robots.txt which allows every page to be indexed.
@@ -47,6 +108,40 @@ checklists:
         Robots.txt is a file which tells Google, Bing and other search engines which pages of your websites are welcome
         to be indexed. Download a robots.txt which allows every page to be indexed.
       author: aisora
+    Design:
+      -
+        title: 
+        content:
+          Robots.txts is a file which tells Google, Bing and other search engines which pages of your websites are welcome
+          to be indexed. Download a robots.txt which allows every page to be indexed.
+        more:
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptat
+        author: aisora
+      -
+        title: Create robots.txt
+        content:
+          Robots.txt is a file which tells Google, Bing and other search engines which pages of your websites are welcome
+          to be indexed. Download a robots.txt which allows every page to be indexed.
+        author: aisora
+    Tech:
+      -
+        title: 
+        content:
+          Robots.txts is a file which tells Google, Bing and other search engines which pages of your websites are welcome
+          to be indexed. Download a robots.txt which allows every page to be indexed.
+        more:
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptat
+        author: aisora
+      -
+        title: Create robots.txt
+        content:
+          Robots.txt is a file which tells Google, Bing and other search engines which pages of your websites are welcome
+          to be indexed. Download a robots.txt which allows every page to be indexed.
+        author: aisora
 ---
 {{#extend "layout-default"}}
   {{#content "main"}}
