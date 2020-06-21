@@ -47,55 +47,15 @@ a:hover {
   margin: 0 auto;
 }
 
-.page-footer {
-  padding: 30px 0 60px;
-  border-top: 2px solid #303030;
-  background: #fff;
-}
-
-.nav {
-  max-width: 930px;
-  margin: 0 auto;
-}
-
-.menu {
-  display: flex;
-  width: 100%;
-  box-sizing: border-box;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.menu__section {
-  padding: 20px 0;
-}
-
-.menu__heading {
-  display: block;
-  padding-bottom: 16px;
-  color: #424242;
-}
-
-.menu__list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.menu__item {
-  padding-bottom: 16px;
+.icon-in-text {
+  display: inline-block;
+  margin-bottom: -5px;
+  margin-left: 3px;
 }
 
 @media (min-width: 700px) {
   h1 {
     font-size: 57px;
-  }
-
-  .menu {
-    flex-direction: row;
   }
 }
 
