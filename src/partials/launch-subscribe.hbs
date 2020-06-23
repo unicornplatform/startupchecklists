@@ -1,0 +1,45 @@
+{{#with subscribe}}
+<section class="subscribe-container">
+    <header>
+      <p class="subscribe-container__heading-message">
+        {{this.subtitle}}
+      </p>
+      <h2 class="subscribe-container__heading">
+        {{this.title}}
+      </h2>
+    </header>
+    <main>
+      {{#if this.checklists}}
+        {{#each checklists}}
+          {{#if this.checked}}
+          <input type="checkbox" id="checklist-{{@index}}" class="subscribe-container__checkbox" checked>
+
+          <label for="checklist-{{@index}}">{{this.title}}</label>
+          {{/if}}
+          {{#unless this.checked}}
+            <input type="checkbox" id="checklist-{{@index}}" class="subscribe-container__checkbox">
+            <label for="checklist-{{@index}}">{{this.title}}</label>
+          {{/unless}}
+        {{/each}}
+      {{/if}}
+
+      {{#each content}}
+        <p class="subscribe-container__content" id="paragraph-{{@index}}">
+          {{this.paragraph}}
+        </p>
+      {{/each}}
+      <div class="subscribe-container__email-form email-form">
+        <label for="email" class="email-form__label">Your email</label>
+        <input type="email" id="email" class="email-form__input">
+        <a class="email-form__subscribe-button">Subscribe</a>
+      </div>
+    </main>
+    <footer>
+      {{#each agreements}}
+        <p class="subscribe-container__agreement" id="">
+          {{{this.agreement}}}
+        </p>
+      {{/each}}
+    </footer>
+  </section>
+{{/with}}
