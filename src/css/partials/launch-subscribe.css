@@ -1,0 +1,95 @@
+.subscribe-container {
+  padding: 0;
+  border: solid 2px #51ec96;
+  border-radius: 10px;
+}
+
+.subscribe-container__heading-container {
+  display: flex;
+  padding: 0;
+  margin-top: 45px;
+  margin-left: 46px;
+  color: #b0b0b0;
+  font-size: 12px;
+}
+
+.subscribe-container__heading-message {
+  display: flex;
+  margin-right: 5px;
+}
+
+
+
+.subscribe-container__heading {
+  padding: 0;
+  margin-top: 7px;
+  margin-left: 46px;
+  font-size: 20px;
+}
+
+.checklists-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-top: 33px;
+  margin-bottom: 54px;
+  margin-left: 49px;
+
+}
+
+.checklists-container__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 11px;
+}
+
+.checklists-container__product-hunt-launch {
+  order: 3;
+  margin-right: 31px;
+}
+
+.checklists-container__startup-landing-page {
+  margin-right: 32px;
+}
+
+.checklists-container__zero-budget-marketing {
+  order: 2;
+
+}
+
+.checklists-container__saas-building {
+  order: 4;
+}
+
+.checklists-container__icon {
+  margin: 0 8px;
+}
+
+.checklists-container__checkbox-hidden {
+  display: none;
+}
+
+.checklists-container__checkbox {
+  width: 20px;
+  height: 20px;
+  border: solid 2px #51ec96;
+  border-radius: 4px;
+}
+
+.checklists-container__checkbox-icon {
+  position: absolute;
+  top: -12px;
+  left: 5px;
+}
+
+.subscribe-container__content {
+  padding: 0;
+  margin-left: 50px;
+
+}
+
+
+
+

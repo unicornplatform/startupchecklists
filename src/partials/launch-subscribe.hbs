@@ -1,26 +1,43 @@
 {{#with subscribe}}
 <section class="subscribe-container">
     <header>
-      <p class="subscribe-container__heading-message">
-        {{this.subtitle}}
-      </p>
+      <div class="subscribe-container__heading-container">
+        <p class="subscribe-container__heading-message">
+          {{this.subtitle}}
+        </p>
+        <img src="../../../icons/invalid-name.svg" height="16" width="34" alt=""
+             class="subscribe-container__heading-icon">
+      </div>
       <h2 class="subscribe-container__heading">
         {{this.title}}
       </h2>
     </header>
     <main>
       {{#if this.checklists}}
-        {{#each checklists}}
-          {{#if this.checked}}
-          <input type="checkbox" id="checklist-{{@index}}" class="subscribe-container__checkbox" checked>
-
-          <label for="checklist-{{@index}}">{{this.title}}</label>
-          {{/if}}
-          {{#unless this.checked}}
-            <input type="checkbox" id="checklist-{{@index}}" class="subscribe-container__checkbox">
-            <label for="checklist-{{@index}}">{{this.title}}</label>
-          {{/unless}}
-        {{/each}}
+        <div class="subscribe-container__checklists-container checklists-container">
+          {{#each checklists}}
+            {{#if this.checked}}
+              <div class="checklists-container__item checklists-container__{{this.id}}">
+                <div class="checklists-container__checkbox"></div>
+                <img src="../../../icons/line.svg" height="26" width="16" alt=""
+                     class="checklists-container__checkbox-icon">
+                <input type="checkbox" id="checklist-{{@index}}" class="checklists-container__checkbox-hidden" checked>
+                <img src="../../../icons/{{this.id}}.svg" height="15" width="15" alt=""
+                   class="checklists-container__icon">
+                <label class="checklists-container__title" for="checklist-{{@index}}">{{this.title}}</label>
+              </div>
+            {{/if}}
+            {{#unless this.checked}}
+              <div class="checklists-container__item checklists-container__{{this.id}}">
+                <div class="checklists-container__checkbox"></div>
+                <input type="checkbox" id="checklist-{{@index}}" class="checklists-container__checkbox-hidden">
+                <img src="../../../icons/{{this.id}}.svg" height="15" width="15" alt=""
+                     class="checklists-container__icon">
+                <label class="checklists-container__title" for="checklist-{{@index}}">{{this.title}}</label>
+              </div>
+            {{/unless}}
+          {{/each}}
+        </div>
       {{/if}}
 
       {{#each content}}
