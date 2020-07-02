@@ -1,12 +1,22 @@
 {{#with subscribe}}
 <section class="subscribe-container">
     <header>
-      <div class="subscribe-container__heading-container">
-        <p class="subscribe-container__heading-message">
+      <button type="button" class="subscribe-container__close-button">
+        <img src="../../../icons/cross.svg" height="10" width="10" alt=""
+           class="subscribe-container__close-icon">
+      </button>
+      <div class="subscribe-container__header-container">
+        <p class="subscribe-container__header-message">
           {{this.subtitle}}
         </p>
-        <img src="../../../icons/invalid-name.svg" height="16" width="34" alt=""
-             class="subscribe-container__heading-icon">
+        {{#if this.checklists}}
+          <img src="../../../icons/invalid-name.svg" height="16" width="34" alt=""
+             class="subscribe-container__header-icon">
+        {{/if}}
+        {{#unless this.checklists}}
+          <img src="../../../icons/confused-face.svg" height="12" width="47" alt=""
+               class="subscribe-container__header-icon">
+        {{/unless}}
       </div>
       <h2 class="subscribe-container__heading">
         {{this.title}}
@@ -45,10 +55,12 @@
           {{this.paragraph}}
         </p>
       {{/each}}
-      <div class="subscribe-container__email-form email-form">
-        <label for="email" class="email-form__label">Your email</label>
-        <input type="email" id="email" class="email-form__input">
-        <a class="email-form__subscribe-button">Subscribe</a>
+      <div class="subscribe-container__form-wrapper email-form__wrapper">
+        <form class="subscribe-container__form email-form">
+          <label for="email" class="email-form__label">Your email</label>
+          <input type="email" id="email" class="email-form__input">
+        </form>
+        <a class="email-form__subscribe-button" href="">Subscribe</a>
       </div>
     </main>
     <footer>

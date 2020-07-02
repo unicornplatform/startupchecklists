@@ -1,10 +1,25 @@
 .subscribe-container {
+/*  max-width: 749px;*/ /*по макету*/
+  position: relative;
   padding: 0;
+  padding-bottom: 44px;
   border: solid 2px #51ec96;
+/*  margin-left: 107px;*/ /*по макету*/
   border-radius: 10px;
+  color: #000;
 }
 
-.subscribe-container__heading-container {
+.subscribe-container__close-button {
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  border: none;
+  margin: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.subscribe-container__header-container {
   display: flex;
   padding: 0;
   margin-top: 45px;
@@ -13,18 +28,20 @@
   font-size: 12px;
 }
 
-.subscribe-container__heading-message {
+.subscribe-container__header-message {
   display: flex;
   margin-right: 5px;
 }
-
-
 
 .subscribe-container__heading {
   padding: 0;
   margin-top: 7px;
   margin-left: 46px;
   font-size: 20px;
+}
+
+.subscribe-container main {
+  margin-top: 25px;
 }
 
 .checklists-container {
@@ -34,7 +51,6 @@
   margin-top: 33px;
   margin-bottom: 54px;
   margin-left: 49px;
-
 }
 
 .checklists-container__item {
@@ -56,7 +72,6 @@
 
 .checklists-container__zero-budget-marketing {
   order: 2;
-
 }
 
 .checklists-container__saas-building {
@@ -85,11 +100,66 @@
 }
 
 .subscribe-container__content {
+  max-width: 550px;
   padding: 0;
   margin-left: 50px;
-
 }
 
+.email-form__wrapper {
+  display: flex;
+  margin-top: 38px;
+  margin-bottom: 26px;
+  margin-left: 50px;
+}
 
+.email-form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.email-form__label {
+  margin-bottom: 2px;
+}
+
+.email-form__input {
+  width: 296px;
+  height: 34px;
+  border: solid 2px #000;
+  border-radius: 4px;
+}
+
+.email-form__subscribe-button {
+  display: flex;
+  height: max-content;
+  flex-basis: auto;
+  align-items: center;
+  align-self: flex-end;
+  padding: 10px 29px 11px 29px;
+  border: none;
+  background: #51ec96;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.email-form__subscribe-button:after {
+  display: block;
+  width: 10px;
+  height: 15px;
+  margin-left: 10px;
+  background: #000;
+  content: '';
+  mask: url('../../icons/arrow-right.svg') no-repeat 50% 50%;
+}
+
+.subscribe-container__agreement {
+  padding: 0;
+  margin-left: 50px;
+}
+
+.subscribe-container__agreement a {
+  padding-bottom: 0;
+  border-bottom: 1px solid #000;
+}
 
 

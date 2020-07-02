@@ -41,7 +41,7 @@
 }
 
 .menu__item a {
-  border-color: rgba(81, 236, 150, 0.4)
+  border-color: rgba(81, 236, 150, 0.4);
 }
 
 @media (min-width: 700px) {
