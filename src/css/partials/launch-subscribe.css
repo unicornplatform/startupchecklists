@@ -1,10 +1,7 @@
 .subscribe-container {
-/*  max-width: 749px;*/ /*по макету*/
   position: relative;
-  padding: 0;
-  padding-bottom: 44px;
+  padding: 0 8% 44px;
   border: solid 2px #51ec96;
-/*  margin-left: 107px;*/ /*по макету*/
   border-radius: 10px;
   color: #000;
 }
@@ -23,7 +20,6 @@
   display: flex;
   padding: 0;
   margin-top: 45px;
-  margin-left: 46px;
   color: #b0b0b0;
   font-size: 12px;
 }
@@ -36,21 +32,18 @@
 .subscribe-container__heading {
   padding: 0;
   margin-top: 7px;
-  margin-left: 46px;
   font-size: 20px;
 }
 
-.subscribe-container main {
+.subscribe-container section {
   margin-top: 25px;
 }
 
 .checklists-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   padding: 0;
   margin-top: 33px;
   margin-bottom: 54px;
-  margin-left: 49px;
 }
 
 .checklists-container__item {
@@ -61,20 +54,15 @@
   margin-bottom: 11px;
 }
 
-.checklists-container__product-hunt-launch {
+.checklists-container__item_type_product-hunt-launch {
   order: 3;
-  margin-right: 31px;
 }
 
-.checklists-container__startup-landing-page {
-  margin-right: 32px;
-}
-
-.checklists-container__zero-budget-marketing {
+.checklists-container__item_type_zero-budget-marketing {
   order: 2;
 }
 
-.checklists-container__saas-building {
+.checklists-container__item_type_saas-building {
   order: 4;
 }
 
@@ -87,35 +75,36 @@
 }
 
 .checklists-container__checkbox {
-  width: 20px;
-  height: 20px;
+  height: 12px;
+  flex-basis: 12px;
+  flex-shrink: 0;
   border: solid 2px #51ec96;
   border-radius: 4px;
 }
 
 .checklists-container__checkbox-icon {
   position: absolute;
-  top: -12px;
-  left: 5px;
+  top: -2px;
+  left: 3px;
 }
 
 .subscribe-container__content {
   max-width: 550px;
   padding: 0;
-  margin-left: 50px;
 }
 
-.email-form__wrapper {
+.email-form-container {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 38px;
   margin-bottom: 26px;
-  margin-left: 50px;
 }
 
 .email-form {
   display: flex;
+  width: 100%;
+  box-sizing: border-box;
   flex-direction: column;
-  margin-right: 20px;
 }
 
 .email-form__label {
@@ -123,7 +112,8 @@
 }
 
 .email-form__input {
-  width: 296px;
+  width: 97%;
+  max-width: 296px;
   height: 34px;
   border: solid 2px #000;
   border-radius: 4px;
@@ -137,6 +127,7 @@
   align-self: flex-end;
   padding: 10px 29px 11px 29px;
   border: none;
+  margin-top: 4px;
   background: #51ec96;
   border-radius: 4px;
   font-weight: bold;
@@ -154,7 +145,6 @@
 
 .subscribe-container__agreement {
   padding: 0;
-  margin-left: 50px;
 }
 
 .subscribe-container__agreement a {
@@ -162,4 +152,87 @@
   border-bottom: 1px solid #000;
 }
 
+@media (min-width: 351px) {
+  .checklists-container__checkbox-icon {
+    top: -10px;
+  }
+
+}
+
+@media (min-width: 600px) {
+  .email-form {
+    width: unset;
+    box-sizing: unset;
+    margin-right: 20px;
+  }
+
+  .email-form__input {
+    width: 296px;
+    max-width: unset;
+  }
+
+  .email-form__subscribe-button {
+    margin-top: 0;
+  }
+
+
+}
+
+@media (min-width: 768px) {
+
+  .subscribe-container {
+    /*  max-width: 749px;*/ /*по макету*/
+    padding: 0;
+    padding-bottom: 44px;
+    /*  margin-left: 107px;*/ /*по макету*/
+  }
+
+  .subscribe-container__header-container {
+    margin-left: 46px;
+  }
+
+
+  .subscribe-container__heading {
+    margin-left: 46px;
+  }
+
+
+  .checklists-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 49px;
+  }
+
+  .checklists-container__item_type_product-hunt-launch {
+    margin-right: 31px;
+  }
+
+  .checklists-container__item_type_startup-landing-page {
+    margin-right: 32px;
+  }
+
+  .checklists-container__checkbox {
+    width: 16px;
+    height: 16px;
+    flex-basis: unset;
+  }
+
+  .checklists-container__checkbox-icon {
+    top: -12px;
+    left: 5px;
+  }
+
+  .subscribe-container__content {
+    margin-left: 50px;
+  }
+
+  .email-form-container {
+    margin-left: 50px;
+  }
+
+  .subscribe-container__agreement {
+    margin-left: 50px;
+  }
+
+}
 

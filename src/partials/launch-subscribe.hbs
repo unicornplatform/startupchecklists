@@ -22,12 +22,12 @@
         {{this.title}}
       </h2>
     </header>
-    <main>
+    <section>
       {{#if this.checklists}}
-        <div class="subscribe-container__checklists-container checklists-container">
+        <div class="checklists-container subscribe-container__checklists-container">
           {{#each checklists}}
             {{#if this.checked}}
-              <div class="checklists-container__item checklists-container__{{this.id}}">
+              <div class="checklists-container__item checklists-container__item_type_{{this.id}}">
                 <div class="checklists-container__checkbox"></div>
                 <img src="../../../icons/line.svg" height="26" width="16" alt=""
                      class="checklists-container__checkbox-icon">
@@ -38,7 +38,7 @@
               </div>
             {{/if}}
             {{#unless this.checked}}
-              <div class="checklists-container__item checklists-container__{{this.id}}">
+              <div class="checklists-container__item checklists-container__item_type_{{this.id}}">
                 <div class="checklists-container__checkbox"></div>
                 <input type="checkbox" id="checklist-{{@index}}" class="checklists-container__checkbox-hidden">
                 <img src="../../../icons/{{this.id}}.svg" height="15" width="15" alt=""
@@ -55,17 +55,17 @@
           {{this.paragraph}}
         </p>
       {{/each}}
-      <div class="subscribe-container__form-wrapper email-form__wrapper">
-        <form class="subscribe-container__form email-form">
+      <div class="email-form-container subscribe-container__form-container">
+        <form class="email-form subscribe-container__form">
           <label for="email" class="email-form__label">Your email</label>
           <input type="email" id="email" class="email-form__input">
         </form>
         <a class="email-form__subscribe-button" href="">Subscribe</a>
       </div>
-    </main>
+    </section>
     <footer>
       {{#each agreements}}
-        <p class="subscribe-container__agreement" id="">
+        <p class="subscribe-container__agreement">
           {{{this.agreement}}}
         </p>
       {{/each}}
