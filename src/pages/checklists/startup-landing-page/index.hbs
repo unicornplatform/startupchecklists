@@ -6,6 +6,7 @@ stylesheets:
   - ../../../css/index.css
   - ../../../css/partials/footer.css
   - ../../../css/partials/checklist.css
+  - ../../../css/partials/launch-subscribe.css
 authors:
   aisora:
     name: Alexander Isora
@@ -48,6 +49,38 @@ checklists:
         Robots.txt is a file which tells Google, Bing and other search engines which pages of your websites are welcome
         to be indexed. Download a robots.txt which allows every page to be indexed.
       author: aisora
+subscribe:
+  title: We plan to create more awesome checklists!
+  subtitle: By the way
+  checklists:
+    -
+      id: startup-landing-page
+      title: Startup Landing Page Checklist
+      checked: true
+    -
+      id: product-hunt-launch
+      title: Product Hunt Launch Checklist
+      checked: false
+    -
+      id: zero-budget-marketing
+      title: Zero Budget Marketing Checklist
+      checked: false
+    -
+      id: saas-building
+      title: SaaS Building Checklist
+      checked: false
+  content:
+    -
+      paragraph: Wanna get notified?
+    -
+      paragraph: Subscribe to be emailed when a new checklist is launched.
+    -
+      paragraph: No spam, no promo. Only new checklist launch notification.
+  agreements:
+    -
+      agreement: By subscribing you agree the <a href="https://meh.startupchecklists.org/privacy-policy/">Privacy Policy</a> and <a href="https://meh.startupchecklists.org/terms-of-service/">Terms of Service</a>.
+    -
+      agreement: You also agree to receive a new checklist notification email.
 ---
 {{#extend "layout-default"}}
   {{#content "main"}}
@@ -66,6 +99,8 @@ checklists:
 
     <h2>Copy</h2>
     {{> checklist items=checklists.Copy}}
+
+    {{> launch-subscribe}}
 
   {{/content}}
 {{/extend}}

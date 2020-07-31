@@ -6,9 +6,24 @@ stylesheets:
   - ../../../css/index.css
   - ../../../css/partials/footer.css
   - ../../../css/partials/checklist.css
+  - ../../../css/partials/launch-subscribe.css
+subscribe:
+  title: Still working on it!
+  subtitle: Uh oh!
+  content:
+    -
+      paragraph: This checklist is not ready yet. Subscribe to get notified when it is ready.
+    -
+      paragraph: No spam, no promo. Only new checklist launch notification.
+  agreements:
+    -
+      agreement: By subscribing you agree the <a href="https://meh.startupchecklists.org/privacy-policy/">Privacy Policy</a> and <a href="https://meh.startupchecklists.org/terms-of-service/">Terms of Service</a>.
+    -
+      agreement: You also agree to receive a new checklist notification email.
 ---
 {{#extend "layout-default"}}
   {{#content "main"}}
     <h1>Product Hunt</h1>
+    {{> launch-subscribe}}
   {{/content}}
 {{/extend}}
