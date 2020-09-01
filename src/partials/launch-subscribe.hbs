@@ -2,7 +2,7 @@
 <section class="subscribe-container">
     <header>
       <button type="button" class="subscribe-container__close-button">
-        <img src="../../../icons/cross.svg" height="10" width="10" alt=""
+        <img src="/icons/cross.svg" height="10" width="10" alt=""
            class="subscribe-container__close-icon">
       </button>
       <div class="subscribe-container__header-container">
@@ -10,11 +10,11 @@
           {{this.subtitle}}
         </p>
         {{#if this.checklists}}
-          <img src="../../../icons/invalid-name.svg" height="16" width="34" alt=""
+          <img src="/icons/invalid-name.svg" height="16" width="34" alt=""
              class="subscribe-container__header-icon">
         {{/if}}
         {{#unless this.checklists}}
-          <img src="../../../icons/confused-face.svg" height="12" width="47" alt=""
+          <img src="/icons/confused-face.svg" height="12" width="47" alt=""
                class="subscribe-container__header-icon">
         {{/unless}}
       </div>
@@ -29,10 +29,10 @@
             {{#if this.checked}}
               <div class="checklists-container__item checklists-container__item_type_{{this.id}}">
                 <div class="checklists-container__checkbox"></div>
-                <img src="../../../icons/line.svg" height="26" width="16" alt=""
+                <img src="/icons/line.svg" height="26" width="16" alt=""
                      class="checklists-container__checkbox-icon">
                 <input type="checkbox" id="checklist-{{@index}}" class="checklists-container__checkbox-hidden" checked>
-                <img src="../../../icons/{{this.id}}.svg" height="15" width="15" alt=""
+                <img src="/icons/{{this.id}}.svg" height="15" width="15" alt=""
                    class="checklists-container__icon">
                 <label class="checklists-container__title" for="checklist-{{@index}}">{{this.title}}</label>
               </div>
@@ -41,7 +41,7 @@
               <div class="checklists-container__item checklists-container__item_type_{{this.id}}">
                 <div class="checklists-container__checkbox"></div>
                 <input type="checkbox" id="checklist-{{@index}}" class="checklists-container__checkbox-hidden">
-                <img src="../../../icons/{{this.id}}.svg" height="15" width="15" alt=""
+                <img src="/icons/{{this.id}}.svg" height="15" width="15" alt=""
                      class="checklists-container__icon">
                 <label class="checklists-container__title" for="checklist-{{@index}}">{{this.title}}</label>
               </div>
