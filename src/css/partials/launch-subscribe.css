@@ -140,7 +140,7 @@
   margin-left: 10px;
   background: #000;
   content: '';
-  mask: url('../../icons/arrow-right.svg') no-repeat 50% 50%;
+  mask: url('/icons/arrow-right.svg') no-repeat 50% 50%;
 }
 
 .subscribe-container__agreement {

@@ -3,8 +3,8 @@ title: Startup Checklists
 meta:
   description: Some meta description
 stylesheets:
-  - ../css/index.css
-  - ../css/pages/index.css
+  - /css/index.css
+  - /css/pages/index.css
 checklists:
   -
     id: startup-landing-page
@@ -47,7 +47,7 @@ checklists:
       {{#each checklists}}
         <section class="checklist checklist_name_{{this.id}}">
           <header class="checklist__header">
-            <img src="../icons/{{this.id}}.svg" height="35px" class="checklist__icon">
+            <img src="/icons/{{this.id}}.svg" height="35px" class="checklist__icon">
             <h2 class="checklist__heading">{{{this.title}}}</h2>
           </header>
           <p>{{this.description}}</p>
