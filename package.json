@@ -6,9 +6,9 @@
   "scripts": {
     "clean": "rimraf ./dist",
     "format": "prettier --write ./**/*.{js,json,css,md}",
-    "build": "npm run clean && parcel build src/pages/index.hbs --no-source-maps --no-cache",
-    "start": "parcel src/pages/index.hbs --no-cache",
-    "watch": "parcel watch src/pages/index.hbs",
+    "build": "npm run clean && parcel build src/**/index.hbs --no-source-maps --no-cache",
+    "start": "parcel src/**/index.hbs --no-cache",
+    "watch": "parcel watch src/index.hbs",
     "lint:es": "eslint --ignore-path .gitignore \"src/**/*.js\"",
     "lint:style": "stylelint \"src/**/*.css\"",
     "lint": "npm run lint:es && npm run lint:style"
