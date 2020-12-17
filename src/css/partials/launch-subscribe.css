@@ -156,7 +156,6 @@
   .checklists-container__checkbox-icon {
     top: -10px;
   }
-
 }
 
 @media (min-width: 600px) {
@@ -174,12 +173,9 @@
   .email-form__subscribe-button {
     margin-top: 0;
   }
-
-
 }
 
 @media (min-width: 768px) {
-
   .subscribe-container {
     /*  max-width: 749px;*/ /*по макету*/
     padding: 0;
@@ -191,11 +187,9 @@
     margin-left: 46px;
   }
 
-
   .subscribe-container__heading {
     margin-left: 46px;
   }
-
 
   .checklists-container {
     display: flex;
@@ -233,6 +227,4 @@
   .subscribe-container__agreement {
     margin-left: 50px;
   }
-
 }
-

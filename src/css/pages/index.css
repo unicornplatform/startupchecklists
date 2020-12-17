@@ -61,20 +61,36 @@
   mask: url('/icons/arrow-right.svg') no-repeat 50% 50%;
 }
 
-.checklist_name_startup-landing-page .checklist__link:after {
+.checklist__link:hover {
+  opacity: 0.8;
+}
+
+.checklist_name_startup-landing-page .checklist__link:after{
   background: #51ec96;
+}
+.checklist_name_startup-landing-page .checklist__link:active {
+  color: #51ec96;
 }
 
 .checklist_name_product-hunt-launch .checklist__link:after {
   background: #e88568;
 }
+.checklist_name_product-hunt-launch .checklist__link:active {
+  color: #e88568;
+}
 
 .checklist_name_zero-budget-marketing .checklist__link:after {
   background: #b774e6;
 }
+.checklist_name_zero-budget-marketing .checklist__link:active {
+  color: #b774e6;
+}
 
 .checklist_name_saas-building .checklist__link:after {
   background: #91aae1;
+}
+.checklist_name_saas-building .checklist__link:active {
+  color: #91aae1;
 }
 
 @media screen and (min-width: 700px) {
