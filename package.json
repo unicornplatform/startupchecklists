@@ -40,7 +40,7 @@
     "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-prettier": "^3.1.4",
     "husky": "^4.2.5",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-handlebars": "^0.4.4",
     "postcss-preset-env": "^6.7.0",
